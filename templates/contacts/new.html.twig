@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}New Contact{% endblock %}
+
+{% block content %}
+    <h1 class="h3 mb-2 text-gray-800">New Contact
+    <div class="col-6 float-right text-right">
+    <a class="btn btn-dark" href="{{ path('app_contacts_index') }}">back to list</a>
+    </div>
+    </h1>
+
+    {{ include('contacts/_form.html.twig') }}
+
+    
+{% endblock %}
